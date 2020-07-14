@@ -1,0 +1,11 @@
+AddDefaultCharset utf-8
+
+#Включаем модуль rewrite
+RewriteEngine On
+
+#Пропускаем в папки и чтение файлов
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+#создаем понятный урл в массив get
+RewriteRule ^(.*) index.php?url=$1 [L,QSA]

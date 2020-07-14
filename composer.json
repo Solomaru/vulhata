@@ -1,0 +1,11 @@
+{
+    "name": "vulu/vulhata",
+    "require": {
+      "gabordemooij/redbean": "dev-master"
+    },
+    "autoload": {
+       "classmap": [
+            "core"
+       ]
+    }
+}

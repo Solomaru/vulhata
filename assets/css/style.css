@@ -1229,12 +1229,12 @@ border-radius: 7px;
 	z-index: 9999;
 }
 .popup {
-	position: fixed;
-	top: 20%;
+	position: absolute;
+	top: 6%;
 	left: 50%;
 	padding: 20px;
   width: 450px;
-  height: 390px;
+  /* height: 100%; */
 	margin-left: -200px;
 	background: #fff;
 	border: 1px solid orange;
@@ -1250,6 +1250,35 @@ border-radius: 7px;
   color: #317c9f;
 }
 
+.block_reg{
+  display: none;
+}
+.block_reg h3{
+  margin-top: 0 !important;
+}
+.block_reg form{
+  padding: 10px 30px 20px 30px !important;
+}
+.block_reg .h-input {
+    font-size: 18px !important;
+}
+.block_reg input{
+  height: 32px !important;
+  margin-bottom: 10px;
+  font-size: 18px !important;
+}
+.block_reg .sel-form{
+  margin-bottom: 12px;
+}
+.block_reg select{
+  width: 100%;
+  height: 33px;
+  border-radius: 5px;
+  border-color: #2c80a7;
+  font-size: 18px;
+  font-weight: 700;
+  color: #40a1cc;
+}
 .register-form{
   display: flex;
   flex-direction: column;

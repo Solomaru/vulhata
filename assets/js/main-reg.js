@@ -65,7 +65,14 @@ $(document).ready ( function(){
              });
       //end vhodClic
     }
-
+    $('.link-reg-vos a:eq(1)').on('click', function() {
+            $('.block_login').hide();
+            $('.block_reg').show();
+      });
+      $('.regist_btn a:eq(1)').on('click', function() {
+              $('.block_reg').hide();
+              $('.block_login').show();
+        });
 
 
 });

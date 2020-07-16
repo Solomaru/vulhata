@@ -101,6 +101,8 @@ class UserController
               $auth = new Authorization($_POST['email'], $_POST['password']);
               $result = $auth->singUpUser();
 
+               // var_dump($result);
+               // exit();
               if (is_array($result)) {
 
                     $_SESSION['users'] = $result;

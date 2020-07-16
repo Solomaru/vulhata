@@ -57,6 +57,9 @@ class Authorization
 
   function singUpUser(){
 
+
+    // var_dump($this->email);
+    // exit();
     if($this->proverkaSingUpdb() and $this->emailValid() and $this->passLightValid()){
 
       $db = Db::getConection();
@@ -75,11 +78,13 @@ class Authorization
 
                 return  $row;
             }
-            return false ;
+            //return false ;
+            return 'gggg';
 
 
     }else {
-      return false;
+    //  return false ;
+      return 'rrrr';
     }
 
   }

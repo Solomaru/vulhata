@@ -13,7 +13,7 @@
           <div class="errors"></div>
 
         <div class="block_sing_up">
-             <form action=""method="post">
+             <form class="ser_login" action=""method="post">
 
                   <div class="input-form-reg">
                      <div class="h-input">Введите email:</div>
@@ -25,7 +25,7 @@
                   </div>
                   <div class="input-btn-reg">
                        <!-- <input type="submit" value="Вход" id="reg-btn"> -->
-                       <a id="reg-btn">Вход</a>
+                       <a id="log-btn">Вход</a>
                   </div>
              </form>
 

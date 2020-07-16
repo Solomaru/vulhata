@@ -2,7 +2,7 @@
  //include ROOT . '/core/views/bazes/header.php';
  ?>
 
-<div class="register-form">
+<div class="register-form ser_reg">
 
                     <h3>Регистрации на сайте</h3>
  <?php if($result): ?>
@@ -16,12 +16,12 @@
 
             <?php endif; ?>
 
-                     <form action="/user/regist"method="post">
+                     <form class="ser_reg" action="/user/regist"method="post">
                         <div class="input-form-reg">
                          <div class="h-input">Как вас зовут:</div>
                         <input type="text" class="form-input" id="inputEmail" placeholder="Введите Имя" name='name' value="<?php echo $name;?>">
                           </div>
-                           <div class="h-input">Ваша сфера:</div>
+                           <div class="h-input">Кем вы будете на сайте:</div>
                            <div class="sel-form">
                                 <select name="sfera">
                                     <option value="0">Покупатель</option>

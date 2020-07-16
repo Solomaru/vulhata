@@ -40,11 +40,11 @@ $(document).ready ( function(){
   		}
   	});
 
-    var vhodClic = document.getElementById("reg-btn");
+    var vhodClic = document.getElementById("log-btn");
     vhodClic.onclick = function(){
-      var msg   = $('.register-form form').serialize();
+      var msg   = $('.register-form .ser_login').serialize();
       $('.errors').empty();
-      console.log(msg);
+    //  console.log(msg);
              $.ajax({
                    type: 'POST',
                    url: '/user/login',
@@ -65,6 +65,33 @@ $(document).ready ( function(){
              });
       //end vhodClic
     }
+
+    var regClic = document.getElementById("reg-btn");
+    regClic.onclick = function(){
+      var msg   = $('.register-form .ser_login').serialize();
+      $('.errors').empty();
+    //  console.log(msg);
+             $.ajax({
+                   type: 'POST',
+                   url: '/user/regist',
+                   data: msg,
+                   success: function(data){
+
+                  //if(data == 'Неправильный email пользователя или пароль'){
+                  //  $('.errors').append('<span>'+data+'</span>');
+                //  }else {
+                    //setTimeout('location.replace("/feed")',500);
+                    console.log(data);
+                  //}
+
+                   },
+                   error:  function(xhr, str){
+                   alert('Возникла ошибка: ' + xhr.responseCode);
+                   }
+             });
+      //end v
+    }
+
     $('.link-reg-vos a:eq(1)').on('click', function() {
             $('.block_login').hide();
             $('.block_reg').show();

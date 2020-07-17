@@ -27,16 +27,21 @@ class UserController
         if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
            #filter
+            $name = htmlspecialchars(trim($_POST['name']));;
             $login = htmlspecialchars(trim($_POST['login']));
             $email = trim($_POST['email']);
             $password = trim($_POST['password']);
-            $toopassword = trim($_POST['topassword']);
+            $toopassword = trim($_POST['toopassword']);
+            $sfera = trim($_POST['sfera']);
             //var_dump($_POST);
 
-
+            //var_dump($name);
             #valid
-            $errors = false;
-
+            // $errors = false;
+            $reg = new Registration($name, $login, $email, $password, $toopassword, $sfera);
+            $result = $reg->saveReg();
+            var_dump($result);
+              exit();
             // #на пустату
             // if(empty($login) or empty($email) or empty($password)){
             //     $errors[] = 'Заполните все поля';
@@ -66,19 +71,19 @@ class UserController
             // if(User::proverkaEmail($email)){
             //     $errors[] = 'Пользователь с такой электронной почтой уже зарегистрирован';
             // }
-            if($errors == true){
-              echo $errors;
-            }
-
-           #Добавляем в базу
-            if($errors == false){
-               $key = include ROOT . '/core/config/config.php';
-               $password = md5(md5($password) . $key['key']);
-//                var_dump($password);
-//                exit();
-                 $result = User::saveUser($login, $email, $password);
-                // header('Refresh: 3; url=/user/login');
-            }
+//             if($errors == true){
+//               echo $errors;
+//             }
+//
+//            #Добавляем в базу
+//             if($errors == false){
+//                $key = include ROOT . '/core/config/config.php';
+//                $password = md5(md5($password) . $key['key']);
+// //                var_dump($password);
+// //                exit();
+//                  $result = User::saveUser($login, $email, $password);
+//                 // header('Refresh: 3; url=/user/login');
+//             }
 
         }
 

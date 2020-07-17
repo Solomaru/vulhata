@@ -24,6 +24,7 @@ return array(
     'MainControllers' => $baseDir . '/core/controllers/MainControllers.php',
     'Obuchenie' => $baseDir . '/core/moduls/Obuchenie.php',
     'ProfilController' => $baseDir . '/core/controllers/ProfilController.php',
+    'Registration' => $baseDir . '/core/classes/auth/Registration.php',
     'ShopController' => $baseDir . '/core/controllers/ShopController.php',
     'Teachers' => $baseDir . '/core/moduls/Teachers.php',
     'User' => $baseDir . '/core/moduls/User.php',

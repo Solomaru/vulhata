@@ -7,6 +7,10 @@ namespace Composer\Autoload;
 class ComposerStaticInitafee9189260536c9f8005d6cfc1efada
 {
     public static $prefixLengthsPsr4 = array (
+        'V' => 
+        array (
+            'Vulhata\\' => 8,
+        ),
         'R' => 
         array (
             'RedBeanPHP\\' => 11,
@@ -14,6 +18,10 @@ class ComposerStaticInitafee9189260536c9f8005d6cfc1efada
     );
 
     public static $prefixDirsPsr4 = array (
+        'Vulhata\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/core',
+        ),
         'RedBeanPHP\\' => 
         array (
             0 => __DIR__ . '/..' . '/gabordemooij/redbean/RedBeanPHP',
@@ -39,6 +47,7 @@ class ComposerStaticInitafee9189260536c9f8005d6cfc1efada
         'MainControllers' => __DIR__ . '/../..' . '/core/controllers/MainControllers.php',
         'Obuchenie' => __DIR__ . '/../..' . '/core/moduls/Obuchenie.php',
         'ProfilController' => __DIR__ . '/../..' . '/core/controllers/ProfilController.php',
+        'Registration' => __DIR__ . '/../..' . '/core/classes/auth/Registration.php',
         'ShopController' => __DIR__ . '/../..' . '/core/controllers/ShopController.php',
         'Teachers' => __DIR__ . '/../..' . '/core/moduls/Teachers.php',
         'User' => __DIR__ . '/../..' . '/core/moduls/User.php',

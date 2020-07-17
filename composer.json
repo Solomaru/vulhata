@@ -4,6 +4,9 @@
       "gabordemooij/redbean": "dev-master"
     },
     "autoload": {
+      "psr-4": {
+           "Vulhata\\": "core"      
+       },
        "classmap": [
             "core"
        ]

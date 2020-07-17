@@ -42,17 +42,19 @@ class User
 
     #добавляем пользователя
 
-    public static function saveUser($login, $email, $password){
+    public static function saveUser($sfera, $login, $email, $password, $name){
 
 //        var_dump($sfera);
 //            exit();
         $pdo = Db::getConection();
 
-        $sql = "INSERT INTO user_va (login, email, password) VALUES(:login, :email, :password)";
+        $sql = "INSERT INTO user_va (sfera, login, email, password, name) VALUES(:sfera, :login, :email, :password, :name)";
         $result = $pdo->prepare($sql);
+        $result->bindParam(':sfera', $sfera);
         $result->bindParam(':login', $login);
         $result->bindParam(':email', $email);
         $result->bindParam(':password',$password);
+        $result->bindParam(':name', $name);
        return $result->execute();
     }
 

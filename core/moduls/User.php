@@ -48,7 +48,7 @@ class User
 //            exit();
         $pdo = Db::getConection();
 
-        $sql = "INSERT INTO user_va (sfera, login, email, password, name) VALUES(:sfera, :login, :email, :password, :name)";
+        $sql = "INSERT INTO users (sfera, login, email, password, name) VALUES(:sfera, :login, :email, :password, :name)";
         $result = $pdo->prepare($sql);
         $result->bindParam(':sfera', $sfera);
         $result->bindParam(':login', $login);

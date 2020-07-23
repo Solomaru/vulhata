@@ -106,16 +106,12 @@ class UserController
               $auth = new Authorization($_POST['email'], $_POST['password']);
               $result = $auth->singUpUser();
 
-               // var_dump($result);
-               // exit();
               if (is_array($result)) {
 
                     $_SESSION['users'] = $result;
                     Lyamb::createDirname($_SESSION['users']['id']);
-
                  // если все ок то на личный кабинет
                 // header('Location: /feed');
-
                 exit();
               } else {
                     $errors[]='Неправильный email пользователя или пароль';

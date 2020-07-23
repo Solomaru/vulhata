@@ -5,16 +5,14 @@ class Db
 
     public static function getConection(){
 
-      $key = include ROOT . '/core/config/config.php';
+    private $key = include ROOT . '/core/config/config.php';
+    private const DB_NAME = $key['name_db'];
+    private const DB_LOGIN = $key['login_db'];
+    private const DB_PASS = $key['pass_db'];
 
+    $pdo = new PDO('mysql:host=localhost;dbname='.self::DB_NAME.';charset=UTF8', self::DB_LOGIN,self::DB_PASS);
 
-    $pdo = new PDO('mysql:host=localhost;dbname='.$key['name_db'].';charset=UTF8',
-    $key['login_db'],
-    $key['pass_db']
-      );
-
-
-       return $pdo;
+    return $pdo;
     }
 //    $pdo = new PDO('mysql:host=localhost;dbname=tocart','root','');
 }

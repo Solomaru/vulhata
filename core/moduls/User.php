@@ -9,7 +9,8 @@ class User
 
         $pdo = Db::getConection();
 
-        $sql = "SELECT login FROM user_va WHERE login = :login ";
+        //$sql = "SELECT login FROM user_va WHERE login = :login ";
+        $sql = "SELECT login FROM users WHERE login = :login ";
         $result = $pdo->prepare($sql);
         $result->bindParam(':login', $login);
         $result->execute();
@@ -26,7 +27,7 @@ class User
 
         $pdo = Db::getConection();
 
-        $sql = "SELECT email FROM user_va WHERE email = :email ";
+        $sql = "SELECT email FROM users WHERE email = :email ";
         $result = $pdo->prepare($sql);
         $result->bindParam(':email', $email);
         $result->execute();
@@ -63,7 +64,7 @@ class User
 
         $db = Db::getConection();
 
-        $sql = "SELECT * FROM user_va WHERE email = :email AND password = :password";
+        $sql = "SELECT * FROM users WHERE email = :email AND password = :password";
 
         $result = $db->prepare($sql);
         $result->bindParam(':email', $email, PDO::PARAM_STR);

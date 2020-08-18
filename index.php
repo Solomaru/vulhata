@@ -21,7 +21,7 @@ if(isset($urlSegment[1])){
 }
 
 #контроллеры (можно сделать чтоюы бралось из базы)
-$mod = ['shop','info','articles','user','obuchenie','teachers','feed','cars','handler','housing'];
+$mod = ['shop','info','articles','user','obuchenie','teachers','feed','rent','handler','housing'];
 
 #проверяем на наличие контроллера
 if(empty($controllerName)){

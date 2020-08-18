@@ -17,6 +17,10 @@ Lyamb::head($a);
        <li></li>
 
    </div>
+
+   <div class="block_slaid_main"></div>
+
+  
    <div class="conteiner-main">
      <div class="items-block-main">
 

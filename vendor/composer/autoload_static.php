@@ -48,6 +48,7 @@ class ComposerStaticInitafee9189260536c9f8005d6cfc1efada
         'Obuchenie' => __DIR__ . '/../..' . '/core/moduls/Obuchenie.php',
         'ProfilController' => __DIR__ . '/../..' . '/core/controllers/ProfilController.php',
         'Registration' => __DIR__ . '/../..' . '/core/classes/auth/Registration.php',
+        'RentController' => __DIR__ . '/../..' . '/core/controllers/RentController.php',
         'ShopController' => __DIR__ . '/../..' . '/core/controllers/ShopController.php',
         'Teachers' => __DIR__ . '/../..' . '/core/moduls/Teachers.php',
         'User' => __DIR__ . '/../..' . '/core/moduls/User.php',

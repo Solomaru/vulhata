@@ -21,7 +21,7 @@ if(isset($urlSegment[1])){
 }
 
 #контроллеры (можно сделать чтоюы бралось из базы)
-$mod = ['shop','info','articles','user','obuchenie','teachers','feed','rent','handler','housing'];
+$mod = ['shop','info','articles','user','system','obuchenie','teachers','feed','rent','handler','housing'];
 
 #проверяем на наличие контроллера
 if(empty($controllerName)){
@@ -54,6 +54,8 @@ try{
 
 }catch(Exception $e){
     header("HTTP/1.1 ". $e->getCode()." ".$e->getMessage());
+    echo $e->getMessage();
+
    die('page not found in 5');
 }
 

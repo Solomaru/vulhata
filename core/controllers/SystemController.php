@@ -12,8 +12,6 @@ class SystemController
       function action_migrationup(){
 
         //Достаем название файлов, обрабатываем их, убераем тип файла .php
-      //  $dir =  ROOT . '/core/classes/migrate';
-      //  $files1 = scandir($dir);
         function myscandir($dir, $sort=0)
           {
           	$list = scandir($dir, $sort);
@@ -30,34 +28,31 @@ class SystemController
           $dir = ROOT . '/core/classes/migrate';
           $files1 = myscandir($dir);
 
+          //Удаляем расширение в название файла
           foreach ($files1 as $key => $file) {
 
             $arr[$key] = pathinfo($file, PATHINFO_FILENAME);
           }
 
-        //Достаем название файлов из базы
-         $result = Fichadb::dbMigrate();
-         $r[]= $result;
-         // foreach ($result as $key => $n_v) {
-         //   $resul[] = $n_v;
-         // }
+        //Достаем название файлов из базы migration
+        $result = Fichadb::dbMigrate();
+         $r[]=  $result;
 
          for($i = 0 ; $i<count($result); $i++){
            $r[$i] = $result[$i]['name_file'];
          }
-         echo "<pre>";
-           print_r($r);
-           echo "<br>";
-           var_dump($arr);
-          exit();
-        // if (is_array($result)) {
-        //   $res = array_merge(array_diff($result, $arr), array_diff($arr, $result));
-        // }else {
-        //   $res = $arr;
-        // }
-        //Сравниваем на совпадения
-        $res = array_merge(array_diff($r, $arr), array_diff($arr, $r));
 
+        //Сравниваем на совпадения
+        if (!empty($r[0])) {
+          $res = array_merge(array_diff($r, $arr), array_diff($arr, $r));
+        }else {
+          $res = $arr;
+        }
+
+        if(empty($res[0])){
+          echo "Нечего записывать в базу";
+          return false;
+        }
         //Приводим название файла в вид класса и сохраняем название файла
         // Получаем две строки, строка класса, строка название файла
         $name = [];
@@ -68,26 +63,24 @@ class SystemController
            }
            $name_class[$key] = implode($name);
         }
-        //Создаем файлы которые не совпали
 
-        //Записываем в базу, в миграцию название файла созданова
+        //Сбрасываем индексы массива
+        array_values($name_class);
+        array_values($res);
+    
 
+        //Записываем в базу, в миграцию название файла create
         foreach ($name_class as $key => $class) {
           $migrate = new $class();
-          if( $migrate->up() ){
+          if($migrate->up()){
             var_dump(Fichadb::saveNameMigrate($res[$key]));
+            echo "Успешно отработал класс ". $class ;
+          }else{
+            echo "Класс не отработал ". $class ;
           }
         }
 
-        //CreateCategoryTable::up();
-        // var_dump($array);
-        //   echo "<br>";
-        var_dump($result);
-        echo "<br>";
-        var_dump($name_class);
-        //$filename = basename($files1, ".php");
-        //print_r($filename);
-        echo "string";
+
       }
 
 }

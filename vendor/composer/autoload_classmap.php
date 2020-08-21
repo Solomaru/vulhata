@@ -14,6 +14,7 @@ return array(
     'CreateCategoryRentTable' => $baseDir . '/core/classes/migrate/create_category_rent_table.php',
     'CreateCategoryRentTypeTable' => $baseDir . '/core/classes/migrate/create_category_rent_type_table.php',
     'CreateHomeTypeHomeTable' => $baseDir . '/core/classes/migrate/create_home_type_home_table.php',
+    'CreateHomeTypeParcingTable' => $baseDir . '/core/classes/migrate/create_home_type_parcing_table.php',
     'Db' => $baseDir . '/core/library/Db.php',
     'Feed' => $baseDir . '/core/moduls/Feed.php',
     'FeedController' => $baseDir . '/core/controllers/FeedController.php',

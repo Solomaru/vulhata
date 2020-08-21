@@ -16,9 +16,11 @@ class RentController
 
       function action_add(){
 
-
-
-
+        // Получение порамитров из базы для отображение во view
+        $type_parcing = Rent::addSelectType('home_type_parcing');
+        $type_home = Rent::addSelectType('home_type_home');
+        //var_dump($type_home);
+        require_once(ROOT . '/core/views/rent/rentadd.php');      
       }
 
       function action_edit(){

@@ -1,7 +1,7 @@
 <?php
 
 
-class CreateHomeTypeHomeInsert
+class InsetrHomeTypeHomeTable
 {
 
 

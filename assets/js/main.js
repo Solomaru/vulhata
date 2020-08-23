@@ -61,15 +61,47 @@
 // }
 $(document).ready ( function(){
 
-
    $('#topProfMenu').on('click', function(){
   //   $('#UserTopMinu').slideToggle(300).css('display','flex');
-
-
         $('.minuUserTop').slideToggle(300).css('display','flex');
-
-
  });
+
+
+//  Событие отвечает за нажатие кнопки для создание объявление и выдора категории
+ $(".offer-group-type .type-block li button").click(function(e) {
+
+      var v = $('.add-container-form').attr('data-addrent-id');
+      function isEmpty(v) {
+            if (v.trim() == '') 
+              return true;
+              
+            return false;
+          }     
+
+      // Проверям на наличия ид если нет то создаем
+          if(!v){
+            $('.add-container-form').attr('data-addrent-id', 555);
+            console.log('атррибут пустой');
+            
+          }else{
+     // Если есть то обнавляем  таблице объявление
+            console.log('атррибут есть');
+          }
+
+
+      console.log(isEmpty(v));
+      console.log(v);
+      
+      $(".offer-group-type .type-block li button").removeClass('button-checked');
+      $(this).addClass('button-checked');
+});
+
+//  Событие отвечает за нажатие кнопки для выбора типа и отправки его в запись
+$(".offer-group-category .type-block li button").click(function(e) {
+
+      $(".offer-group-category .type-block li button").removeClass('button-checked');
+      $(this).addClass('button-checked');
+});
 
 
 

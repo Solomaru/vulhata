@@ -1,3 +1,5 @@
+
+
 :root{
 --color-main: #29aae3;
 }
@@ -1343,3 +1345,119 @@ border-radius: 7px;
 .flex{
   display: flex;
 }
+/*start Стили добавление объявленя */
+.add-container-form {
+  background: #fff;
+  width: 75%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+}
+
+.add-container-form h1{
+  margin: 25px 15px;
+  color: #383737;
+  text-shadow: 0px 1px 1px #111;
+}
+.offer-group-type{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+.add-container-form .offer-group-type ul li button, 
+.add-container-form .offer-group-category ul li button{
+  font-size: inherit;
+    line-height: normal;
+    display: block;
+    min-width: 50px;
+    min-height: 40px;
+    padding: 0 16px;
+    cursor: inherit;
+    border-radius: 12px;
+    background: none;
+    transition: none;
+    width: 220px;
+    height: 200px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    color: #353535;
+}
+.fa-icon-btn i{
+  font-size: 53px;
+    padding: 17px;
+}
+/* .fa-icon-btn-s::after{
+  display: block;
+  content: '\e068';
+  font-family: 'Font Awesome 5 Free', 'Font Awesome 5 Brands';
+  font-weight: 900;
+  width: 100px;
+  height: 100px;
+} */
+.add-container-form  li{
+  list-style: none;
+ 
+}
+
+.offer-group-type .type-block{
+  display: flex;
+  flex-flow: row wrap;
+}
+.offer-group-type .type-block li, .offer-group-category .type-block li{
+  /* flex: 0 0 100px; */
+  margin: 15px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+  border-radius: 12px;
+}
+.offer-group-type .type-block li button:hover{
+  color:#fff;
+  background:#29aae3;
+}
+/* .offer-group-type .type-block li:hover{
+  color:#fff;
+  background:#29aae3;
+} */
+.items-type{width:80%;}
+.items-type h2{
+  margin: 15px 0 5px 20px;
+  color: #3a3939;
+}
+.offer-group-type .type-block li button:focus{
+  outline:0;
+}
+.offer-group-category .type-block li button:focus{
+  outline:0;
+}
+.button-checked{
+  border: none !important;
+  color:#fff !important;
+  background:#29aae3 !important;
+
+}
+.offer-group-category {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.offer-group-category .type-block {
+  display: flex;
+  flex-flow: row wrap;
+}
+.title-add-rent{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.title-add-rent i{
+  font-size: 40px;
+  color: #0098cd;
+}
+/*end  Стили добавление объявленя */

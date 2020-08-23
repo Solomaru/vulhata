@@ -10,30 +10,75 @@ Lyamb::head($a);
  ?>
 
 
-<div class="add-container-form">
+<div class="add-container-form" data-addrent-id="">
+<div class="title-add-rent">
+    <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+    <h1 class="offer-title-add">Добавить новое объявление</h1>
+    <i class="fab fa-tripadvisor" aria-hidden="true"></i>
+</div>
 
-  <h1 class="offer-title-add">Добавить новое объявление</h1>
 
   <div class="offer-group-type">
 
     <div class="items-type">
+    <h2 class="offer-title-add">Выберите категорию:</h2>
       <ul class="type-block">
-          <li><button type="button" data-sosed-id="1" class="but-add-type but-type">Ищу соседа/соседку</button></li>
-          <li><button type="button" data-sovmestnaya-id="2" class="but-add-type but-type">Совместная аренда</button></li>
-          <li><button type="button" data-podselus-id="3" class="but-add-type but-type">Подселюсь</button></li>
-          <li><button type="button" data-snyat-id="4" class="but-add-type but-type">Снять</button></li>
-          <li><button type="button" data-sutki-id="4" class="but-add-type but-type">Посуточная аренда</button></li>
+         <li>
+          <button type="button" data-sosed-id="1" class="but-add-type but-type">
+            <div class="fa-icon-btn"><i class="fas fa-restroom"></i></div>
+            <span>Ищу соседа/соседку</span>
+          </button>
+        </li>
+          <li>
+            <button type="button" data-sovmestnaya-id="2" class="but-add-type but-type">
+            <div class="fa-icon-btn"><i class="fa fa-people-arrows"></i></div>
+              <span>Совместная аренда</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-podselus-id="3" class="but-add-type but-type">
+            <div class="fa-icon-btn"><i class="fas fa-users"></i></div>
+              <span>Подселюсь</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-snyat-id="4" class="but-add-type but-type"> 
+            <div class="fa-icon-btn"><i class="fas fa-street-view"></i></div>
+             <span>Снять</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" data-sutki-id="4" class="but-add-type but-type">     
+            <div class="fa-icon-btn"><i class="fas fa-user-clock"></i></div>
+              <span>Посуточная аренда</span>
+            </button>
+          </li>
       </ul>
     </div>
 
   </div>
   <div class="offer-group-category">
+  <div class="items-type">
     <h2 class="offer-title-add">Выберите тип недвижимости:</h2>
     <ul class="type-block">
-        <li><button type="button" data-kvartira-id="1" class="but-add-category but-category">Квартира</button></li>
-        <li><button type="button" data-komnata-id="2" class="but-add-category but-category">Комната</button></li>
-        <li><button type="button" data-dom-id="3" class="but-add-category but-category">Дом</button></li>
+        <li>
+          <button type="button" data-kvartira-id="1" class="but-add-category but-category">
+          <div class="fa-icon-btn"><i class="far fa-building"></i></div>
+            <span>Квартира</span>
+          </button></li>
+        <li>
+          <button type="button" data-komnata-id="2" class="but-add-category but-category">   
+          <div class="fa-icon-btn"><i class="fas fa-door-closed"></i></div>
+           <span>Комната</span>
+          </button>
+        </li>
+        <li>
+          <button type="button" data-dom-id="3" class="but-add-category but-category">
+          <div class="fa-icon-btn"><i class="fas fa-home"></i></div>
+           <span>Дом</span>
+          </button></li>
     </ul>
+</div>
   </div>
   <div class="offer-group-location">
     <h2 class="offer-title-add">Адрес</h2>

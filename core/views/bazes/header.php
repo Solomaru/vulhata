@@ -6,9 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="https://yastatic.net/jquery/3.3.1/jquery.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-
-
+  
+  <script src="https://kit.fontawesome.com/bd0fcadbdd.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/feed-style.css">
   <link rel="stylesheet" href="/assets/css/formstyle.css">

@@ -1426,7 +1426,7 @@ border-radius: 7px;
 } */
 .items-type{width:80%;}
 .items-type h2{
-  margin: 15px 0 5px 20px;
+  margin: 15px 0 15px 16px;
   color: #3a3939;
 }
 .offer-group-type .type-block li button:focus{
@@ -1459,5 +1459,36 @@ border-radius: 7px;
 .title-add-rent i{
   font-size: 40px;
   color: #0098cd;
+}
+
+.map-cont-add{
+  width: 90%;
+  height: 300px;
+  margin-left: 15px;
+}
+.offer-group-location{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.location-container{
+  height: 50px;
+  width: 90%;
+  border: 1px solid #dcd9d9;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin: 15px;
+  padding-left: 15px;
+}
+.location-container .input-addres{
+  border-radius: 7px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 19px;
+}
+.location-container input:focus{
+  outline:0;
 }
 /*end  Стили добавление объявленя */

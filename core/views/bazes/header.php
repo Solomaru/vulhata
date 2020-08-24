@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   
   <script src="https://kit.fontawesome.com/bd0fcadbdd.js" crossorigin="anonymous"></script>
+ 
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=687afa96-ae7b-4aa4-8f31-d4a25b4858f5&lang=ru_RU" type="text/javascript">
+    </script>
+ 
+ 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/feed-style.css">
   <link rel="stylesheet" href="/assets/css/formstyle.css">

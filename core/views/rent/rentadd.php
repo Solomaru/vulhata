@@ -1,7 +1,7 @@
 <?php
 $a['title']= 'Добавить аренду';
 $a['description']='';
-$a['js'][0] = '';
+$a['js'][0] = 'apimap.js';
 Lyamb::head($a);
 // echo "<pre>";
 // var_dump($type_parcing);
@@ -48,6 +48,12 @@ Lyamb::head($a);
             </button>
           </li>
           <li>
+            <button type="button" data-snyat-id="4" class="but-add-type but-type"> 
+            <div class="fa-icon-btn"><i class="fas fa-street-view"></i></div>
+             <span>Сдать</span>
+            </button>
+          </li>
+          <li>
             <button type="button" data-sutki-id="4" class="but-add-type but-type">     
             <div class="fa-icon-btn"><i class="fas fa-user-clock"></i></div>
               <span>Посуточная аренда</span>
@@ -80,12 +86,21 @@ Lyamb::head($a);
     </ul>
 </div>
   </div>
+
+
   <div class="offer-group-location">
-    <h2 class="offer-title-add">Адрес</h2>
+  <div class="items-type">
+    <h2 class="offer-title-add">Выберите адрес на карте:</h2>
+    <div id="map_add" class="map-cont-add"></div>
     <div class="location-container input-add-location">
-      <input type="text" placeholder="Введите адрес" name="" value="">
+      <input id="ymap_input" class="input-addres" type="text" placeholder="Назмите на нужный адрес на карте" name="" value="" >
+    </div>
+
+      
     </div>
   </div>
+
+
   <div class="offer-group-building">
     <h2 class="offer-title-add">О доме</h2>
     <div class="building-container">
@@ -120,6 +135,9 @@ Lyamb::head($a);
       </div>
     </div>
   </div>
+<span></span>
+
+
   <div class="offer-group-properties">
     <h2 class="offer-title-add">О квартире</h2>
     <div class="block-properties">

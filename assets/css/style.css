@@ -1361,7 +1361,7 @@ border-radius: 7px;
 
 .add-container-form h1{
   margin: 25px 15px;
-  color: #383737;
+  color: #3c515f;
   text-shadow: 0px 1px 1px #111;
 }
 .offer-group-type{
@@ -1387,7 +1387,7 @@ border-radius: 7px;
     text-align: center;
     cursor: pointer;
     border: none;
-    color: #353535;
+    color: #3c515f;
 }
 .fa-icon-btn i{
   font-size: 53px;
@@ -1427,7 +1427,7 @@ border-radius: 7px;
 .items-type{width:80%;}
 .items-type h2{
   margin: 15px 0 15px 16px;
-  color: #3a3939;
+  color: #3c515f;
 }
 .offer-group-type .type-block li button:focus{
   outline:0;
@@ -1490,5 +1490,172 @@ border-radius: 7px;
 }
 .location-container input:focus{
   outline:0;
+}
+.offer-group-building {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.building-container{
+  padding: 4px 29px;
+}
+.input-o-home{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.input-o-home .g-postr{
+  font-size: 22px;
+}
+.input-o-home .g-postr span{
+
+}
+.input-o-home .g-postr div{
+  height: 50px;
+  width: 90%;
+  border: 1px solid #dcd9d9;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin: 12px 0;
+  padding-left: 15px;
+}
+.input-o-home .g-postr input {
+  border-radius: 7px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 19px;
+}
+.input-o-home .g-postr input:focus{
+  outline:0;
+}
+
+.input-o-home .v-potolok{}
+.input-o-home .v-potolok span{
+  font-size: 22px;
+}
+.input-o-home .v-potolok div{
+  height: 50px;
+  width: 90%;
+  border: 1px solid #dcd9d9;
+  border-radius: 7px;
+  margin-bottom: 10px;
+  margin: 12px 0;
+  padding-left: 15px;
+}
+.input-o-home .v-potolok input {
+  border-radius: 7px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 19px;
+}
+.input-o-home .v-potolok input:focus{
+  outline:0;
+}
+.type-park , .type-dom {
+  margin: 15px 0;
+  font-size: 18px;
+}
+.type-park span, .type-dom span{
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+.building-block-type-dom, .building-block-park{
+  display: flex;
+  flex-direction: row;
+}
+.building-block-type-dom li, .building-block-park li{
+  margin: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+  border-radius: 12px;
+}
+.building-block-park button, .building-block-type-dom button{
+  font-size: inherit;
+  line-height: normal;
+  display: block;
+  min-width: 50px;
+  min-height: 40px;
+  /* padding: 0 16px; */
+  cursor: inherit;
+  border-radius: 12px;
+  background: none;
+  transition: none;
+  width: 120px;
+  height: 55px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: #353535;
+}
+.offer-group-properties{
+  width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+.block-properties span{
+  font-size: 22px;
+  margin: 10px 15px;
+}
+.komnat-block-type-dom {
+  display: flex;
+  flex-direction: row;
+}
+.komnat-block-type-dom li{
+  margin: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+  border-radius: 12px;
+}
+.komnat-block-type-dom button{
+  font-size: inherit;
+  line-height: normal;
+  display: block;
+  min-width: 50px;
+  min-height: 40px;
+  /* padding: 0 16px; */
+  cursor: inherit;
+  border-radius: 12px;
+  background: none;
+  transition: none;
+  width: 55px;
+  height: 55px;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  color: #353535;
+}
+.add-container-form button:focus{
+  outline:0;
+}
+.block-properties{
+  margin-bottom: 10px;
+  padding: 4px 29px;
+}
+.block-properties-flex{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.block-properties-flex input{
+  height: 50px;
+  width: 100px;
+  border: 1px solid #dcd9d9;
+  margin-bottom: 10px;
+  margin: 12px 0;
+  /* padding-left: 15px; */
+  font-size: 19px;
+  text-align: center;
+}
+.block-properties-flex input:nth-child(2){
+  border-radius: 7px 0 0 7px;
+}
+.block-properties-flex input:nth-child(3){
+  border-radius: 0px;
+}
+.block-properties-flex input:nth-child(4){
+  border-radius:0 7px 7px 0;
 }
 /*end  Стили добавление объявленя */

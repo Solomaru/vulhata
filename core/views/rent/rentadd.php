@@ -102,47 +102,53 @@ Lyamb::head($a);
 
 
   <div class="offer-group-building">
+<div class="items-type">
     <h2 class="offer-title-add">О доме</h2>
     <div class="building-container">
-      <div class="">
+  <div class="input-o-home">
+      <div class="g-postr">
         <span>Год постройки</span>
         <div>
         <input type="text" name="" value="" placeholder="Год постройки">
         </div>
       </div>
-      <div class="">
+      <div class="v-potolok">
         <span>Высота потолков</span>
         <div>
         <input type="text" name="" value="" placeholder="Высота потолков">
         </div>
       </div>
-      <div class="">
-        <ul class="building-block-park">
-            <span>Тип парковки</span>   
+  </div>
+      <div class="type-park">
+      <span>Тип парковки</span> 
+        <ul class="building-block-park">        
             <?php foreach($type_parcing as $parcing):?>
             <li><button type="button" data-<?=$parcing['name_us']?>-id="<?=$parcing['id']?>" class="but-add-building but-building"><?=$parcing['name_ru']?></button></li>
             <?php endforeach; ?>
          </ul>
       </div>
       <div class="type-dom">
-
+      <span>Тип дома</span>
         <ul class="building-block-type-dom">
-          <span>Тип дома</span>
+          
           <?php foreach($type_home as $type_hom):?>
           <li><button type="button" data-<?=$type_hom['name_us']?>-id="<?=$type_hom['id']?>" class="but-add-building but-building"><?=$type_hom['name_ru']?></button></li>
            <?php endforeach; ?>       
        </ul>
       </div>
     </div>
+    </div>
   </div>
 <span></span>
 
 
   <div class="offer-group-properties">
+  <div class="items-type">
     <h2 class="offer-title-add">О квартире</h2>
     <div class="block-properties">
 
     </div>
+
     <div class="block-properties">
       <span>Комнат</span>
       <ul class="komnat-block-type-dom">
@@ -152,7 +158,7 @@ Lyamb::head($a);
           <li><button type="button" data-block-id="4" class="but-add-building but-building">4</button></li>
       </ul>
     </div>
-    <div class="block-properties">
+    <div class="block-properties block-properties-flex">
       <span>Площадь кв.м</span>
       <input type="text" name="" value="" placeholder="Общая">
       <input type="text" name="" value="" placeholder="Жилая">
@@ -171,7 +177,7 @@ Lyamb::head($a);
 
     </div>
   </div>
-
+</div>
   <div class="offer-group-images">
     <h2 class="offer-title-add">Фотографии</h2>
   </div>

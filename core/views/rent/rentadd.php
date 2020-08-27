@@ -179,7 +179,31 @@ Lyamb::head($a);
   </div>
 </div>
   <div class="offer-group-images">
-    <h2 class="offer-title-add">Фотографии</h2>
+  <div class="items-type">
+      <h2 class="offer-title-add">Фотографии</h2>
+      <div class="images-container">
+      <div id="errorImg"></div> 
+       <form id="frm">    
+          <div id="max-img" class="imege-max"></div>
+           <div id="drop-area">
+            <h3 class="drop-text">Перетащите изображение</h3>
+                    <input type="file" id="file-input" name="file_img"/>
+            </div> 
+            <div id="res" class="imege-res">
+                  <ul id="uploadImagesList">
+                      <li class="item template">
+                          <span class="img-wrap">
+                              <img src="image.jpg" alt="">
+                          </span>
+                          <span class="delete-link" title="Удалить">Удалить</span>
+                      </li>
+                  </ul>
+            </div>
+        </form>
+      
+      </div>
+  </div>
+  
   </div>
   <div class="offer-group-comfort">
     <h2 class="offer-title-add">Удобства</h2>

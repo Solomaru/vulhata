@@ -1658,4 +1658,41 @@ border-radius: 7px;
 .block-properties-flex input:nth-child(4){
   border-radius:0 7px 7px 0;
 }
+.offer-group-images {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+#uploadImagesList{
+  display: flex;
+  flex-flow: row wrap;
+  margin: 15px;
+    width: 100%;
+    padding: 15px;
+}
+#uploadImagesList .item .img-wrap{
+  width: inherit;
+  display: block;
+  height: 150px;
+}
+#uploadImagesList .item{
+
+    margin: 10px 21px;
+    border-radius: 15px;
+}
+#uploadImagesList .item .img-wrap img{
+  width: auto;
+  height: inherit;
+  border-radius: 15px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+}
+
+.clear {
+  clear: both;
+}
 /*end  Стили добавление объявленя */
+
+
+
+

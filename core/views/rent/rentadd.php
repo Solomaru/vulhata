@@ -103,7 +103,7 @@ Lyamb::head($a);
 
   <div class="offer-group-building">
 <div class="items-type">
-    <h2 class="offer-title-add">О доме</h2>
+    <h2 class="offer-title-add">О доме:</h2>
     <div class="building-container">
   <div class="input-o-home">
       <div class="g-postr">
@@ -144,7 +144,7 @@ Lyamb::head($a);
 
   <div class="offer-group-properties">
   <div class="items-type">
-    <h2 class="offer-title-add">О квартире</h2>
+    <h2 class="offer-title-add">О квартире:</h2>
     <div class="block-properties">
 
     </div>
@@ -180,7 +180,7 @@ Lyamb::head($a);
 </div>
   <div class="offer-group-images">
   <div class="items-type">
-      <h2 class="offer-title-add">Фотографии</h2>
+      <h2 class="offer-title-add">Фотографии:</h2>
       <div class="images-container">
       <div id="errorImg"></div> 
        <form id="frm">    
@@ -206,7 +206,27 @@ Lyamb::head($a);
   
   </div>
   <div class="offer-group-comfort">
-    <h2 class="offer-title-add">Удобства</h2>
+  <div class="items-type">
+    <h2 class="offer-title-add">Удобства:</h2>
+    <ul class="btns-comfort">
+          <li><button type="button" data-one-id="1" class="btn-comfort-item">Интернет</button></li>
+          <li><button type="button" data-too-id="2" class="btn-comfort-item">Стиральная машина</button></li>
+          <li><button type="button" data-monolit-id="3" class="btn-comfort-item">Холодильник</button></li>
+          <li><button type="button" data-block-id="4" class="btn-comfort-item">Посудомойка</button></li>
+          <li><button type="button" data-block-id="5" class="btn-comfort-item">Телевизор</button></li>
+          <li><button type="button" data-too-id="6" class="btn-comfort-item">Кондиционер</button></li>
+          <li><button type="button" data-one-id="7" class="btn-comfort-item">Мебель на кухне</button></li>
+          <li><button type="button" data-one-id="8" class="btn-comfort-item">Мебель в жилой</button></li>
+          <li><button type="button" data-monolit-id="9" class="btn-comfort-item">Можно с животными</button></li>
+          <li><button type="button" data-block-id="10" class="btn-comfort-item">Можнро с детьми</button></li>
+          <li><button type="button" data-too-id="11" class="btn-comfort-item">Лифт</button></li>
+          <li><button type="button" data-monolit-id="12" class="btn-comfort-item">Мусорпровод</button></li>
+          <li><button type="button" data-block-id="13" class="btn-comfort-item">Консьерж</button></li>
+          <li><button type="button" data-block-id="14" class="btn-comfort-item">Закрытая территория</button></li>
+      </ul>
+      <h2 class="offer-title-add">Коментарий и описание:</h2>
+      <textarea name="description" placeholder="Опишите недвижимость"></textarea>
+  </div>
   </div>
 
   <div class="offer-group-price">

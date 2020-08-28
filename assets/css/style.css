@@ -1691,6 +1691,16 @@ border-radius: 7px;
 .clear {
   clear: both;
 }
+.offer-group-comfort{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.btns-comfort{
+  display: flex;
+  flex-flow: row wrap;
+}
 /*end  Стили добавление объявленя */
 
 

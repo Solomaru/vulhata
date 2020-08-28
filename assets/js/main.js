@@ -206,48 +206,44 @@ function preview(file) {
 
 site.Rent = {
 
-   maxFileSize: 2097152, // (байт) Максимальный размер файла (2мб)
-   queue: {},
-   countImg: 5,
-   imagesList: $('#uploadImagesList'),
-   itemPreviewTemplate:  this.imagesList.find('.item.template').clone(),
+  
 
 
   /** Инициализация модуля */
 	init: function() {
-    // var itemPreviewTemplate = site.Rent.imagesList.find('.item.template').clone();
-    site.Rent.itemPreviewTemplate.removeClass('template');
-    site.Rent.imagesList.find('.item.template').remove();
-    $("#drop-area").on('dragenter', function (e){
-      e.preventDefault();
-      $(this).css('background', '#eeeeee');
-    });
+    // // var itemPreviewTemplate = site.Rent.imagesList.find('.item.template').clone();
+    // site.Rent.itemPreviewTemplate.removeClass('template');
+    // site.Rent.imagesList.find('.item.template').remove();
+    // $("#drop-area").on('dragenter', function (e){
+    //   e.preventDefault();
+    //   $(this).css('background', '#eeeeee');
+    // });
 
-    $("#drop-area").on('dragover', function (e){
-      e.preventDefault();
-    });
+    // $("#drop-area").on('dragover', function (e){
+    //   e.preventDefault();
+    // });
 
-    // загрузка при перетаскивание
-    $("#drop-area").on('drop', function (e){
-      $(this).css('background', '#eee');
-      e.preventDefault();
+    // // загрузка при перетаскивание
+    // $("#drop-area").on('drop', function (e){
+    //   $(this).css('background', '#eee');
+    //   e.preventDefault();
 
-      var image = e.originalEvent.dataTransfer.files;        
-      //createFormData(image);
-      site.Rent.forImageFiles(image);
-    });
+    //   var image = e.originalEvent.dataTransfer.files;        
+    //   //createFormData(image);
+    //   site.Rent.forImageFiles(image);
+    // });
 
-    //загрузка через кнопку
-    $("#file-input").change(function() {
-      // выводим объект FileLis
-      // createFormData(this.files);
-      site.Rent.forImageFiles(this.files);
-      // Очищаем инпут файл путем сброса формы
-        $('#frm').each(function(){
-                this.reset();
-        });
+    // //загрузка через кнопку
+    // $("#file-input").change(function() {
+    //   // выводим объект FileLis
+    //   // createFormData(this.files);
+    //   site.Rent.forImageFiles(this.files);
+    //   // Очищаем инпут файл путем сброса формы
+    //     $('#frm').each(function(){
+    //             this.reset();
+    //     });
 
-    });
+    // });
     // var maxFileSize = 2 * 1024 * 1024; // (байт) Максимальный размер файла (2мб)
     // var queue = {};
     // var form = $('form#uploadImages');
@@ -263,14 +259,14 @@ site.Rent = {
 
 
     // Удаление фотографий
-    site.Rent.imagesList.on('click', '.delete-link', function () {
-      var item = $(this).closest('.item'),
-          id = item.data('id');
+    // site.Rent.imagesList.on('click', '.delete-link', function () {
+    //   var item = $(this).closest('.item'),
+    //       id = item.data('id');
 
-      delete site.Rent.queue[id];
+    //   delete site.Rent.queue[id];
 
-      item.remove();
-    });
+    //   item.remove();
+    // });
 
   },
   eventButton: function(){

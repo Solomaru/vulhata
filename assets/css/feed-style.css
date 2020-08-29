@@ -1,5 +1,6 @@
 /* model okno */
-.modal{
+
+.modal {
   display: none;
   position: fixed;
   z-index: 1;
@@ -8,9 +9,10 @@
   width: 100%;
   height: 100%;
   overflow: auto;
-  background: rgba(0,0,0,0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
-.modal-content{
+
+.modal-content {
   background-color: #fefefe;
   margin: 11% auto;
   padding: 20px;
@@ -18,60 +20,70 @@
   width: 700px;
   height: 260px;
 }
-.close{
+
+.close {
   color: #aaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
   cursor: pointer;
 }
+
 /* model okno */
 
 #drop-area {
   border-radius: 10px;
   align-self: center;
   margin-top: 20px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
   width: 90%;
   height: 200px;
   background-color: white;
   /* border: 1px solid; */
-  box-shadow: 0 4px 24px rgba(0,0,0,.16);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, .16);
 }
+
 .drop-text {
-    margin-top: 45px;
-    color: #3c515f;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: center;
+  margin-top: 45px;
+  color: #3c515f;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
 }
+
 #drop-area input {
-    margin: 15px 0 0 230px;
+  margin: 15px 0 0 230px;
 }
-#frm{
+
+#frm {
   display: flex;
   flex-direction: column;
 }
-#frm p{
+
+#frm p {
   font-size: 22px;
   margin: 20px 0 0 30px;
   color: #794e3e;
 }
-.main-lenta-addcars{
+
+.main-lenta-addcars {
   max-width: 800px;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 15px 15px 15px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 15px 15px 15px;
 }
-.conteiner-addcars{
+
+.conteiner-addcars {
   padding: 10px;
-    background: #fff;
-    width: 100%;
-    min-height: 400px;
+  background: #fff;
+  width: 100%;
+  min-height: 400px;
 }
-.butMark , .butModel{
+
+.butMark,
+.butModel {
   margin: 3px;
   /* padding: 0 10px; */
   /* height: 32px; */
@@ -83,228 +95,285 @@
   font-weight: 600;
   outline: 0;
   cursor: pointer;
-
   box-sizing: border-box;
 }
-.butMark:hover, .butModel:hover{
+
+.butMark:hover,
+.butModel:hover {
   background: #608036;
   color: #fff;
 }
 
-.section-addcars{
+.section-addcars {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   /* justify-content: center; */
   /* align-items: center; */
 }
-#section-marka-cars{
+
+#section-marka-cars {
   margin: 10px;
 }
-#section-marka-cars ul{
+
+#section-marka-cars ul {
   width: 100%;
-    padding: 0;
-    margin: 20px 0 0;
-    list-style: none;
-    -webkit-column-count: 6;
-    column-count: 6;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+  -webkit-column-count: 6;
+  column-count: 6;
 }
-#section-model-cars{
+
+#section-model-cars {
   display: none;
   margin: 15px;
 }
-#section-model-cars ul{
+
+#section-model-cars ul {
   width: 100%;
-    padding: 0;
-    margin: 20px 0 0;
-    list-style: none;
-    -webkit-column-count: 6;
-    column-count: 6;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+  -webkit-column-count: 6;
+  column-count: 6;
 }
-#section-harak-cars, #section-vid-cars, #section-komplekt-cars, #section-price-cars, #section-contakt-cars{
+
+#section-harak-cars,
+#section-vid-cars,
+#section-komplekt-cars,
+#section-price-cars,
+#section-contakt-cars {
   margin: 10px;
   display: none;
 }
-#section-harak-cars ul{
+
+#section-harak-cars ul {
   margin-bottom: 35px;
 }
-#section-harak-cars h3, #section-vid-cars h3, #section-marka-cars h3, #section-model-cars h3, #section-komplekt-cars h3,#section-price-cars h3, #section-contakt-cars h3{
+
+#section-harak-cars h3,
+#section-vid-cars h3,
+#section-marka-cars h3,
+#section-model-cars h3,
+#section-komplekt-cars h3,
+#section-price-cars h3,
+#section-contakt-cars h3 {
   font-size: 33px;
   text-align: center;
   color: #5f773f;
   margin-bottom: 10px;
 }
-.harak-cars{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    width: 100%;
-    margin: 25px;
+
+.harak-cars {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 25px;
 }
-.harak-cars  li{
+
+.harak-cars li {
   list-style: none;
 }
-.harak-cars  li p{
+
+.harak-cars li p {
   font-size: 15px;
   margin-bottom: 5px;
 }
-#section-harak-cars i, #section-price-cars i{
+
+#section-harak-cars i,
+#section-price-cars i {
   color: red;
   font-size: 22px;
 }
-.harak-cars li input{
-      width: 100px;
-      /* height: 30px; */
-      font-size: 20px;
-      padding: 5px;
-      text-align: center;
-      border-radius: 5px;
-      border: 1px solid #a9a1a1;
+
+.harak-cars li input {
+  width: 100px;
+  /* height: 30px; */
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid #a9a1a1;
 }
-.kuzov-cars{
+
+.kuzov-cars {
   flex-wrap: wrap-reverse;
-   padding: 5px 25px;
+  padding: 5px 25px;
   /* -webkit-column-count: 6;
     column-count: 6; */
 }
-.kuzov-cars li{
-   list-style: none;
+
+.kuzov-cars li {
+  list-style: none;
 }
 
-.but-addavto{
+.but-addavto {
   margin: 0 0 0 -1px;
-padding: 5px 15px;
-height: 32px;
-border: 1px solid #d9d9d9;
-background-color: #fff;
-color: #393939;
-font-size: 15px;
-/* line-height: 1.3; */
-font-weight: 700;
-outline: 0;
-cursor: pointer;
-border-radius: 0;
-box-sizing: border-box;
+  padding: 5px 15px;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  background-color: #fff;
+  color: #393939;
+  font-size: 15px;
+  /* line-height: 1.3; */
+  font-weight: 700;
+  outline: 0;
+  cursor: pointer;
+  border-radius: 0;
+  box-sizing: border-box;
 }
-.kuzov-block{
+
+.kuzov-block {
   margin-left: 25px;
 }
-.kuzov-block p{
+
+.kuzov-block p {
   margin-left: 25px;
 }
-.butnext{
+
+.butnext {
   margin: 25px 15px 15px 15px;
   justify-content: space-between;
   /* width: 100%; */
 }
-#conteiner-image-add{
+
+#conteiner-image-add {
   padding: 20px;
   text-align: center;
 }
-#conteiner-image-add img{
-margin: 5px;
+
+#conteiner-image-add img {
+  margin: 5px;
 }
-.add-color-cars{
+
+.add-color-cars {
   max-width: 450px;
   width: 100%;
   flex-wrap: wrap;
   justify-content: flex-start;
   margin: 10px;
 }
-.lable-checkbox-color{
+
+.lable-checkbox-color {
   width: 30px;
-    height: 30px;
-    border-radius: 7px;
-    display: block;
-    border: 1px solid;
-    cursor: pointer;
-    position: relative;
+  height: 30px;
+  border-radius: 7px;
+  display: block;
+  border: 1px solid;
+  cursor: pointer;
+  position: relative;
 }
-.color-cars{
+
+.color-cars {
   margin: 10px;
   flex-wrap: wrap;
 }
-.color-cars input{
+
+.color-cars input {
   display: none;
 }
-.color-cars input[type=radio]:checked + .lable-checkbox-color::before{
-    content: "\f00c";
-    font-family: FontAwesome;
-    display: block;
-    font-size: 22px;
-    color: #44474c;
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    right: 0;
-    bottom: 0;
+
+.color-cars input[type=radio]:checked+.lable-checkbox-color::before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  display: block;
+  font-size: 22px;
+  color: #44474c;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  right: 0;
+  bottom: 0;
 }
 
-.title-color{
+.title-color {
   font-size: 22px;
 }
-.cont-color-cars{
-      margin: 20px 0 15px 65px;
+
+.cont-color-cars {
+  margin: 20px 0 15px 65px;
 }
+
 /*  */
-.aktiv-but-kuzov, .aktiv-but-dver-count, .aktiv-but-korobka-peredac, .aktiv-but-privod, .aktiv-but-rul, .aktiv-but-dvigatel{
+
+.aktiv-but-kuzov,
+.aktiv-but-dver-count,
+.aktiv-but-korobka-peredac,
+.aktiv-but-privod,
+.aktiv-but-rul,
+.aktiv-but-dvigatel {
   background: #5f773f;
   color: #eee;
 }
-.komplekt-column{
-    max-width: 250px;
-    width: 100%;
-    margin: 10px;
-}
-.komplekt-column h4{
+
+.komplekt-column {
+  max-width: 250px;
+  width: 100%;
   margin: 10px;
 }
+
+.komplekt-column h4 {
+  margin: 10px;
+}
+
 .komfort-cars {
   width: 100%;
 }
-.komplekt-check-cars{
+
+.komplekt-check-cars {
   margin: 5px;
   align-items: end;
   padding: 5px;
 }
-.komplekt-check-cars input{
-    width: 30px;
-    height: 20px;
-    margin-right: 5px;
+
+.komplekt-check-cars input {
+  width: 30px;
+  height: 20px;
+  margin-right: 5px;
 }
 
-.komplekt-check-cars span{
+.komplekt-check-cars span {
   /* padding: 5px; */
   margin-top: 2px;
 }
-.block-select select{
-    padding: 7px 4px;
-    font-size: 15px;
-    margin: 5px 0;
-    border-radius: 5px;
+
+.block-select select {
+  padding: 7px 4px;
+  font-size: 15px;
+  margin: 5px 0;
+  border-radius: 5px;
 }
-.opisanie-cars-textarea{
-    width: 610px;
-    height: 176px;
-    padding: 11px 13px;
-    font-size: 17px;
-    background-color: #fff;
-    border: 1px solid #d8d8d8;
-    border-radius: 4px;
-    outline: none;
-    resize: none;
+
+.opisanie-cars-textarea {
+  width: 610px;
+  height: 176px;
+  padding: 11px 13px;
+  font-size: 17px;
+  background-color: #fff;
+  border: 1px solid #d8d8d8;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
 }
-.sostayani-cars{
+
+.sostayani-cars {
   padding: 10px;
 }
-.opisanie-cars, .price-cars{
+
+.opisanie-cars,
+.price-cars {
   padding: 25px;
 }
-.opisanie-cars h4, .price-cars h4{
-    margin-bottom: 5px;
-    color: #3d4456;
+
+.opisanie-cars h4,
+.price-cars h4 {
+  margin-bottom: 5px;
+  color: #3d4456;
 }
-.price-cars input{
+
+.price-cars input {
   padding-right: 5px;
   text-align: center;
   font-size: 17px;
@@ -318,167 +387,203 @@ margin: 5px;
   background-color: #fff;
   border: 1px solid #d8d8d8;
 }
-.check-torg{
+
+.check-torg {
   margin-left: 10px;
   padding: 0 10px 10px 10px;
 }
-.check-torg input{
+
+.check-torg input {
   width: 30px;
-    height: 20px;
-    margin-right: 5px;
+  height: 20px;
+  margin-right: 5px;
 }
-.check-torg span{
+
+.check-torg span {
   margin-top: 2px;
 }
-.contact-cars{
+
+.contact-cars {
   padding: 10px;
 }
-.contact-cars input{
+
+.contact-cars input {
   padding: 5px;
   width: 340px;
   border-radius: 5px;
   border: 1px solid #8590af;
   font-size: 20px;
 }
-.contact-input{
+
+.contact-input {
   margin: 10px;
 }
-.contact-input span{
+
+.contact-input span {
   font-size: 21px;
   margin-bottom: 5px;
   font-weight: bolder;
   color: #28292d;
 }
-.vidg-kroshki{
+
+.vidg-kroshki {
   width: 545px;
   padding: 15px;
   margin-bottom: 15px;
   justify-content: space-between;
 }
-.title-id-car{
+
+.title-id-car {
   align-self: center;
   font-size: 23px;
   color: #28292d;
 }
-.header-price-id{
+
+.header-price-id {
   font-size: 23px;
   color: #5f773f;
   font-weight: bold;
 }
-.vidg-kroshki a{
+
+.vidg-kroshki a {
   text-decoration: none;
 }
 
-.vidg-kroshki a:before{
+.vidg-kroshki a:before {
   content: "\f190";
   font-family: FontAwesome;
   font-size: 40px;
   color: #3c4660;
 }
-.content-car{
+
+.content-car {
   width: 100%;
 }
-.harone{
+
+.harone {
   width: 100%;
-margin: 15px;
+  margin: 15px;
 }
-.hartoo{
+
+.hartoo {
   width: 100%;
-margin: 15px;
+  margin: 15px;
 }
-.harakteristik .item{
+
+.harakteristik .item {
   justify-content: space-between;
   margin-bottom: 8px;
   align-items: baseline;
   overflow-x: hidden;
 }
-.harakteristik .item .hr{
+
+.harakteristik .item .hr {
   border-bottom: 1px dotted #8f8f8f;
-flex-grow: 1;
+  flex-grow: 1;
 }
-.title-har{margin-right: 7px;}
-.value-har{
+
+.title-har {
+  margin-right: 7px;
+}
+
+.value-har {
   margin-left: 7px;
   font-size: 18px;
 }
-.span-title-idcar{
+
+.span-title-idcar {
   margin: 10px 0 0 15px;
   font-size: 18px;
   color: black;
   font-weight: bold;
 }
-.mesto-prod{
+
+.mesto-prod {
   justify-content: space-around;
   margin: 20px;
-font-size: 21px;
-padding-bottom: 20px;
-border-bottom: 3px dashed #ece9e9;
+  font-size: 21px;
+  padding-bottom: 20px;
+  border-bottom: 3px dashed #ece9e9;
 }
-.block-cent{
+
+.block-cent {
   align-items: center;
 }
-.telefon-car{
+
+.telefon-car {
   font-weight: bold;
   font-size: 25px;
   color: #5f773f;
 }
-.big-imagi img{
+
+.big-imagi img {
   width: 100%;
 }
-.cont-mini-imagi{
-  justify-content: space-evenly;;
-  margin-top: 7px;
 
+.cont-mini-imagi {
+  justify-content: space-evenly;
+  ;
+  margin-top: 7px;
 }
-.cont-mini-imagi img{
+
+.cont-mini-imagi img {
   width: 90;
   height: 69px;
   border-radius: 7px;
 }
-.opisnie-car{
+
+.opisnie-car {
   margin: 20px 0 15px 0;
 }
-.text-vladel{
+
+.text-vladel {
   padding: 15px;
-    font-size: 18px;
-    color: #2d2c2c;
+  font-size: 18px;
+  color: #2d2c2c;
 }
-.komplektaciya{
+
+.komplektaciya {
   column-count: 2;
   padding: 15px;
   margin-left: 15px;
   font-size: 15px;
   line-height: 1.2em;
 }
-.komp-span{
+
+.komp-span {
   font-size: 16px;
   font-weight: bold;
   margin-left: -5px;
 }
-.komplektaciya ul{
+
+.komplektaciya ul {
   margin: 7px;
 }
-.komplektaciya ul li{
+
+.komplektaciya ul li {
   list-style: none;
   border-bottom: 2px dashed #ccc8c8;
   padding: 5px;
   align-self: flex-end;
 }
-.cont-class-block{
+
+.cont-class-block {
   max-height: 203px;
   overflow: hidden;
   position: relative;
 }
-.komplektaciya::after{
+
+.komplektaciya::after {
   content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 45px;
-    background: linear-gradient(180deg,hsla(0,0%,100%,0) 0,#fff);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 45px;
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, #fff);
 }
-.but-up-down{
+
+.but-up-down {
   height: 40px;
   background: #fff;
   border: 1px solid #bbb7b7;

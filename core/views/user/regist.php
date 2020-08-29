@@ -21,12 +21,13 @@
                          <div class="h-input">Как вас зовут:</div>
                         <input type="text" class="form-input" id="inputEmail" placeholder="Введите Имя" name='name' value="<?php echo $name;?>">
                           </div>
-                           <div class="h-input">Кем вы будете на сайте:</div>
+                           <div class="h-input">Тип аккаунта:</div>
                            <div class="sel-form">
                                 <select name="sfera">
                                     <option value="0">Покупатель</option>
                                     <option value="1">Продавец</option>
-                                    <option value="2">Риелтор</option>
+                                    <option value="2">Агенте</option>
+                                    <option value="3">Агенство</option>
                                 </select>
                           </div>
 

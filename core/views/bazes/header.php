@@ -44,7 +44,7 @@
       <div class="main-menu">
         <div class="main-kupi-prodai">
         <a href="/cars">Объявления</a>
-          <a href="/cars/addcars"><ion-icon name="add"></ion-icon>Разместить объявление
+          <a href="/rent/add"><ion-icon name="add"></ion-icon>Разместить объявление
 </a>
         </div>
         <?php if(!Lyamb::dostup()):?>

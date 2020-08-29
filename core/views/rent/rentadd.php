@@ -156,6 +156,8 @@ Lyamb::head($a);
           <li><button type="button" data-too-id="2" class="but-add-building but-building">2</button></li>
           <li><button type="button" data-monolit-id="3" class="but-add-building but-building">3</button></li>
           <li><button type="button" data-block-id="4" class="but-add-building but-building">4</button></li>
+          <li><button type="button" data-block-id="5" class="but-add-building but-building">5</button></li>
+          <li><button type="button" data-block-id="5" class="but-add-building but-building">Больше 5</button></li>
       </ul>
     </div>
     <div class="block-properties block-properties-flex">
@@ -258,7 +260,7 @@ Lyamb::head($a);
     </div>
     <div>
       <span>Как обращаться</span>
-      <input type="text" name="" value="" placeholder="@emil">
+      <input type="text" name="" value="" placeholder="Имя">
     </div>
     <div>
     <span>Эл. почта</span>

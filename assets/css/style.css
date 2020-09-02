@@ -1557,7 +1557,9 @@ grid-row-gap: 15px; */
 }
 
 /*start Стили добавление объявленя */
-
+.add-container-form input:focus{
+  outline: 0;
+}
 .add-container-form {
   background: #fff;
   width: 75%;
@@ -2011,4 +2013,93 @@ textarea:focus{
   min-height: 150px;
   margin-left: 35px;
  }
+ .offer-group-price{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+ }
+ .offer-group-price .input-price{
+  height: 50px;
+    width: 50%;
+    border: 2px solid #dcd9d9;
+    border-radius: 7px;
+
+    margin: 22px 30px;
+    padding-left: 15px;
+ }
+ .offer-group-price input{
+    border-radius: 7px;
+    border: none;
+    height: 100%;
+    width: 100%;
+    font-size: 26px;
+    padding: 10px;
+    font-weight: bold;
+    color: #3c515f;
+ }
+.additionally{
+  margin-bottom: 10px;
+  padding: 4px 29px;
+}
+.additionally span{
+  font-size: 22px;
+  margin: 10px 5px;
+  display: block;
+}
+.offer-group-contact{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+}
+.offer-group-contact .type-akkaunt span{
+  display: block;
+  font-size: 22px;
+  margin: 10px 5px;
+}
+.offer-group-contact .type-akkaunt{
+  margin-bottom: 10px;
+  padding: 4px 29px;
+}
+.offer-group-contact .container-input-user{
+  margin-bottom: 10px;
+  padding: 4px 29px;
+}
+
+.offer-group-contact .container-input-user .input-name, .offer-group-contact .container-input-user .input-email,.offer-group-contact .container-input-user .input-phone{
+  height: 41px;
+  width: 50%;
+  border: 2px solid #dcd9d9;
+  border-radius: 3px; 
+  margin: 10px 30px;
+  padding-left: 15px;
+  display: flex;
+    flex: 1 1;
+    flex-wrap: nowrap;
+}
+.offer-group-contact .container-input-user input{
+  border-radius: 7px;
+  border: none;
+  height: 100%;
+  width: 100%;
+  font-size: 24px;
+  padding: 10px;
+  color: #3c515f;
+}
+.offer-group-contact .flex-input-contact{
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+.offer-group-contact .flex-input-contact span{
+  font-size: 24px;
+}
+.offer-group-contact .container-input-user .input-email{
+  margin-left: 99px;
+}
+.offer-group-contact .container-input-user .input-phone{
+  margin-left: 50px;
+}
 /*end  Стили добавление объявленя */

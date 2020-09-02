@@ -11,8 +11,14 @@
  
   <script src="https://api-maps.yandex.ru/2.1/?apikey=687afa96-ae7b-4aa4-8f31-d4a25b4858f5&lang=ru_RU" type="text/javascript">
     </script>
- 
- 
+
+ <!-- <script src="/assets/js/libs/Inputmask5/dist/jquery.inputmask.js" type="text/javascript"></script>
+ <script src = "/assets/js/libs/Inputmask5/dist/inputmask.js " ></script> -->
+
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/3.3.4/jquery.inputmask.bundle.min.js"></script>
+
+
+
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/feed-style.css">
   <link rel="stylesheet" href="/assets/css/formstyle.css">

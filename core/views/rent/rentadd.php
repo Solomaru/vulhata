@@ -232,12 +232,14 @@ Lyamb::head($a);
   </div>
 
   <div class="offer-group-price">
+  <div class="items-type">
     <h2 class="offer-title-add">Цена</h2>
-    <div>
-      <input type="text" name="" value="" placeholder="Цена">
+    <div class="input-price">
+      <!-- <input id="decimal" type="text" name="" value="" placeholder="Цена" > -->
+      <input type="text" name="currency-field" id="currency-field" pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$" value="" data-type="currency" placeholder="₽">
     </div>
 
-    <div>
+    <div class="additionally">
     <span>Дополнительно</span>
       <ul class="komnat-block-type-dom">
           <li><button type="button" data-one-id="1" class="but-add-building but-building">Нужен залог</button></li>
@@ -245,12 +247,15 @@ Lyamb::head($a);
           <li><button type="button" data-monolit-id="3" class="but-add-building but-building">Возможен торг</button></li>
       </ul>
     </div>
+   </div>
   </div>
 
-  <div class="offer-group-contact">
+
+<div class="offer-group-contact">
+<div class="items-type">
     <h2 class="offer-title-add">Контакты</h2>
 
-    <div>
+    <div class="type-akkaunt">
     <span>Тип аккаунта</span>
       <ul class="komnat-block-type-dom">
           <li><button type="button" data-one-id="1" class="but-add-building but-building">Собственик</button></li>
@@ -258,19 +263,32 @@ Lyamb::head($a);
           <li><button type="button" data-monolit-id="3" class="but-add-building but-building">Агенство</button></li>
       </ul>
     </div>
-    <div>
-      <span>Как обращаться</span>
-      <input type="text" name="" value="" placeholder="Имя">
+
+
+    <div class="container-input-user">
+        <div class="flex-input-contact">
+          <span>Как обращаться:</span>
+          <div class="input-name">
+            <input type="text" name="" value="" placeholder="Имя">
+          </div>
+        </div>
+        
+        <div class="flex-input-contact">
+        <span>Эл. почта:</span>
+        <div class="input-email">
+          <input type="text" name="" value="" placeholder="@mail">
+        </div>
+        </div>
+
+        <div class="flex-input-contact">
+        <span>Ваш телефон:</span>
+        <div class="input-phone">
+          <input id="phone" type="tel" name="phone" placeholder="Телефон" required pattern="^\+\d[-]\(\d{3}\)[-]\d{3}[-]\d{2}[-]\d{2}$">
+        </div>
+       </div>
+      </div>
     </div>
-    <div>
-    <span>Эл. почта</span>
-      <input type="text" name="" value="" placeholder="@mail">
-    </div>
-    <div>
-    <span>Ваш телефон</span>
-      <input type="text" name="" value="" placeholder="Ваш телефон">
-    </div>
-  </div>
+</div>
 
 
 
